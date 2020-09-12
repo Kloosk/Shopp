@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Menu from "../menu/Menu";
 import Elements from "./elements/Elements";
 import Logo from "./logo/Logo";
+import Mobile from "../menuMobile/Mobile";
 
 const Container = styled.nav`
   position: fixed;
@@ -35,7 +36,7 @@ const Nav = () => {
                 </FlexIn>
                 <Elements/>
             </Flex>
-
+            <Mobile/>
         </Container>
     );
 };
