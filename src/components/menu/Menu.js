@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import {useDispatch} from "react-redux";
-import {menuOn} from "../../redux";
+import {cartClose, menuClose, menuOn} from "../../redux";
 
 const Container = styled.button`
   border: none;
@@ -46,6 +46,8 @@ const Line = styled.span`
 const Menu = () => {
     const dispatch = useDispatch();
     const handleMenu = () => {
+        dispatch(cartClose());
+        dispatch(menuClose());
         dispatch(menuOn());
     };
     return (

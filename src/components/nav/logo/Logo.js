@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components'
 import logo from './ccc_logo.png'
+import {Link} from "react-router-dom";
 
-const Container = styled.div`
+const Container = styled(Link)`
   width: 22vw;
   height: 100%;
   background-image: url(${logo});
@@ -12,7 +13,7 @@ const Container = styled.div`
 `;
 const Logo = () => {
     return (
-        <Container></Container>
+        <Container to="/"></Container>
     );
 };
 

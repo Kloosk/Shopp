@@ -5,9 +5,25 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menuMobile/Mobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menuMobile/Mobile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menuMobile/Topbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menuMobile/Topbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menuMobile/subMenuMobile/TopbarSubMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menuMobile/subMenuMobile/TopbarSubMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menuMobile/subMenuMobile/Women/Women.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menuMobile/subMenuMobile/SubMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/nav/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/elements/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/elements/Cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/elements/Elements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/elements/Elements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/elements/Favourite.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/elements/Favourite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/elements/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/elements/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/logo/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/logo/Logo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/slideshow/Slideshow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slideshow/Slideshow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/mobileSubMenu/MobileSubMenuActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/mobileSubMenu/MobileSubMenuActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/mobileSubMenu/MobileSubMenuReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/mobileSubMenu/MobileSubMenuReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/rootReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +52,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/club/img" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -45,9 +61,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Łukasz\Desktop\pages\src\redux" />
+      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\club\img" />
+      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\companylist\img" />
+      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\collection\img" />
+      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\slideshow\img" />
+      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\menuMobile\subMenuMobile\subsubMenuMobile" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\menuMobile\subMenuMobile" />
       <recent name="C:\Users\Łukasz\Desktop\pages\src\components\menuMobile\subMenuMobile\Women" />
       <recent name="C:\Users\Łukasz\Desktop\pages\src\components\menuMobile" />
       <recent name="C:\Users\Łukasz\Desktop\pages\src\components\nav\logo" />
@@ -84,7 +105,15 @@
       <workItem from="1599835556006" duration="7334000" />
       <workItem from="1599861608501" duration="3369000" />
       <workItem from="1599905656788" duration="1829000" />
-      <workItem from="1599916491800" duration="7903000" />
+      <workItem from="1599916491800" duration="14207000" />
+      <workItem from="1599945144136" duration="8957000" />
+      <workItem from="1599995710342" duration="3583000" />
+      <workItem from="1600014403991" duration="5282000" />
+      <workItem from="1600085704136" duration="4975000" />
+      <workItem from="1600091745802" duration="2386000" />
+      <workItem from="1600102995178" duration="5010000" />
+      <workItem from="1600110274082" duration="4897000" />
+      <workItem from="1600123961032" duration="306000" />
     </task>
     <servers />
   </component>
@@ -92,10 +121,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="210" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599844511410">
+    <state x="210" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599948838312">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="210" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599844511410" />
+    <state x="210" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599948838312" />
     <state x="739" y="262" key="FileChooserDialogImpl" timestamp="1599757523339">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -104,5 +133,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="148" y="103" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599837420606" />
+    <state x="0" y="0" width="1103" height="774" key="dock-window-1" timestamp="1599997292366">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="0" width="1103" height="774" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1599997292366" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1600017488437">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600017488437" />
+    <state x="372" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1599952592848">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="372" y="231" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599952592848" />
   </component>
 </project>

@@ -1,7 +1,8 @@
 import {SUBMENU_ON,SUBMENU_OFF} from "./MobileSubMenuTypes";
 
 const initialState = {
-    submenu: false
+    submenu: false,
+    name: ''
 };
 
 const submenuReducer = (state=initialState,action) => {
@@ -15,7 +16,8 @@ const submenuReducer = (state=initialState,action) => {
         case SUBMENU_ON:{
             return{
                 ...state,
-                submenu: true
+                submenu: true,
+                name: action.name
             }
         }
         default: return state

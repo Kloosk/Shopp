@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import {useDispatch} from "react-redux";
-import {menuOff} from "../../redux";
+import {menuOff, submenuOff} from "../../redux";
 
 const Container = styled.div`
   width: 100%;
@@ -32,6 +32,7 @@ const Topbar = () => {
     const dispatch = useDispatch();
     const handleMenu = () => {
         dispatch(menuOff());
+        dispatch(submenuOff());
     };
     return (
         <Container>

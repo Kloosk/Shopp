@@ -5,8 +5,9 @@ export const submenuOff = () => {
       type: SUBMENU_OFF
   }
 };
-export const submenuOn = () => {
+export const submenuOn = (name) => {
     return{
-        type: SUBMENU_ON
+        type: SUBMENU_ON,
+        name: name
     }
 };
