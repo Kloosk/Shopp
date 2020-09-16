@@ -19,6 +19,7 @@ import SandalyMen from "./components/men/sandaly/SandalyMen";
 import SportoweMen from "./components/men/sportowe/SportoweMen";
 import SportoweWomen from "./components/women/sportowe/SportoweWomen";
 import SandalyWomen from "./components/women/sandaly/SandalyWomen";
+import ItemDetail from "./components/itemdetail/ItemDetail";
 
 function App() {
   return (
@@ -57,6 +58,9 @@ function App() {
                 </Route>
                 <Route path="/women/sandaly">
                     <SandalyWomen/>
+                </Route>
+                <Route path="/:id">
+                    <ItemDetail/>
                 </Route>
             </Switch>
         </div>

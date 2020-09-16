@@ -12,7 +12,6 @@ const Men = () => {
     useEffect(() => {
         axios.get('https://shopp-api.herokuapp.com/men')
             .then((res) => {
-                console.log(res.data);
                 setShoes(res.data);
             })
             .catch((err) => {

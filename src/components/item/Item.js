@@ -44,7 +44,7 @@ const Title = styled.h1`
   font-size: 1rem;
 `;
 const Linkk = styled(Link)`
-  
+  text-decoration: none;
 `;
 const Item = ({item}) => {
     return (
