@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components'
 import logo from './ccc_logo.png'
 import {Link} from "react-router-dom";
+import {useDispatch} from "react-redux";
+import {cartClose, menuClose} from "../../../redux";
 
 const Container = styled(Link)`
   width: 22vw;
@@ -12,8 +14,13 @@ const Container = styled(Link)`
   cursor: pointer;
 `;
 const Logo = () => {
+    const dispatch = useDispatch();
+    const exit = () => {
+        dispatch(cartClose());
+        dispatch(menuClose());
+    };
     return (
-        <Container to="/"></Container>
+        <Container to="/" onClick={exit}></Container>
     );
 };
 
