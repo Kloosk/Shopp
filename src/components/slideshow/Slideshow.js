@@ -4,6 +4,7 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import img1 from './img/img.jpg';
 import img2 from './img/imgg.jpg';
+import {Link} from "react-router-dom";
 
 const Container = styled.section`
  width: 90vw;
@@ -41,7 +42,7 @@ const Btn = styled.button`
   padding: 7px 14px;
   border: none;
 `;
-const A = styled.a`
+const Linkk = styled(Link)`
   color: #000;
   text-decoration: none;
 `;
@@ -71,13 +72,13 @@ const Slideshow = () => {
             <Slide {...properties}>
                 <SlideEach>
                     <Element style={{'backgroundImage': `url(${slideImages[0]})`}}>
-                        <Btn><A href="#">Zobacz więcej</A></Btn>
+                        <Btn><Linkk to="/women">Zobacz więcej</Linkk></Btn>
                         <Title>Premiera VANS</Title>
                     </Element>
                 </SlideEach>
                 <SlideEach>
                     <Element style={{'backgroundImage': `url(${slideImages[1]})`}}>
-                        <Btn><A href="#">Zobacz więcej</A></Btn>
+                        <Btn><Linkk to="/men">Zobacz więcej</Linkk></Btn>
                         <Title>AW 20</Title>
                     </Element>
                 </SlideEach>

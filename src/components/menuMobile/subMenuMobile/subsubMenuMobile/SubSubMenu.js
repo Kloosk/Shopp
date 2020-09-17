@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components'
 import TopbarSubSubMenu from "./TopbarSubSubMenu";
-import {useSelector} from "react-redux";
-
-
+import {useDispatch, useSelector} from "react-redux";
+import {Link} from "react-router-dom";
+import {menuOff} from "../../../../redux";
 
 const Container = styled.nav`
   z-index: 7;
@@ -24,7 +24,7 @@ const Ul = styled.ul`
 const Li = styled.li`
 
 `;
-const Link = styled.a`
+const Linkk = styled(Link)`
   display: flex;
   align-items: center;
   font-size: 1.1rem;
@@ -38,22 +38,26 @@ const Link = styled.a`
 const SubSubMenu = () => {
     const show = useSelector(state => state.subsubmenu.subsubmenu);
     const name = useSelector(state => state.subsubmenu.name);
+    const dispatch = useDispatch();
+    const handleClick = () => {
+        dispatch(menuOff());
+    };
     return (
         <Container menuStatus={show}>
             <TopbarSubSubMenu/>
             {name === "Buty" &&
             <Ul>
-                <Li><Link href="#">Sportowe</Link></Li>
-                <Li><Link href="#">Półbuty</Link></Li>
-                <Li><Link href="#">Sandały</Link></Li>
-                <Li><Link href="#">Trampki</Link></Li>
+                <Li><Linkk onClick={handleClick} to="/women/sportowe">Sportowe</Linkk></Li>
+                <Li><Linkk onClick={handleClick} to="/women/sportowe">Półbuty</Linkk></Li>
+                <Li><Linkk onClick={handleClick} to="/women/sandaly">Sandały</Linkk></Li>
+                <Li><Linkk onClick={handleClick} to="/women/sportowe">Trampki</Linkk></Li>
             </Ul>
             }
             {name === "Marki" &&
             <Ul>
-                <Li><Link href="#">Lasocki</Link></Li>
-                <Li><Link href="#">VANS</Link></Li>
-                <Li><Link href="#">Jenny Fairy</Link></Li>
+                <Li><Linkk onClick={handleClick} to="/men/sportowe">Lasocki</Linkk></Li>
+                <Li><Linkk onClick={handleClick} to="/men/sandaly">VANS</Linkk></Li>
+                <Li><Linkk onClick={handleClick} to="/men/sportowe">Jenny Fairy</Linkk></Li>
             </Ul>
             }
         </Container>

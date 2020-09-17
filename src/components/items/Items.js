@@ -8,7 +8,6 @@ import SortMenu from "./SortMenu";
 
 const Container = styled.div`
   width: 100vw;
-  padding: 0 25px 0 15px;
 `;
 const AllItems = styled.main`
   padding: 0 25px 0 15px;

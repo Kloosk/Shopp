@@ -1,0 +1,39 @@
+import React from 'react';
+import styled from 'styled-components'
+import {Slide} from "react-slideshow-image";
+
+const Container = styled.section`
+ width: 90vw;
+ margin: 10vh auto 0 auto;
+`;
+const SlideEach = styled.div`
+
+`;
+const Element = styled.div`
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+`;
+const Photos = ({imgs}) => {
+    const properties = {
+        transitionDuration: 200,
+        autoplay: false,
+        indicators: true,
+        arrows: true,
+    };
+    return (
+        <Container>
+            <Slide {...properties}>
+                <SlideEach>
+                    <Element style={{'backgroundImage': `url(${imgs[0]})`}}></Element>
+                </SlideEach>
+                <SlideEach>
+                    <Element style={{'backgroundImage': `url(${imgs[1]})`}}></Element>
+                </SlideEach>
+            </Slide>
+        </Container>
+    )
+};
+export default Photos;

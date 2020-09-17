@@ -4,6 +4,7 @@ import Social from "./Social";
 import Info from "./Info";
 
 const Container = styled.footer`
+ margin-top: 100px;
  width: 100vw;
  display: flex;
  align-items: center;
@@ -20,7 +21,7 @@ const Footer = () => {
         <Container>
             <Info/>
             <Social/>
-            <Copy>Copyright © CCC 2020</Copy>
+            <Copy>Copyright © 2020</Copy>
         </Container>
     );
 };

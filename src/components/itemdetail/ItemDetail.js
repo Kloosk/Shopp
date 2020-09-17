@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Nav from "../nav/Nav";
 import Footer from "../footer/Footer";
 import {useParams} from "react-router";
+import Photos from "./Photos";
 const axios = require('axios');
 
 const Container = styled.div`
@@ -11,18 +12,19 @@ const Container = styled.div`
   padding: 0 20px;
 `;
 const Title = styled.h1`
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #000;
   margin: 15px 0;
 `;
 const Price = styled.p`
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: #000;
 `;
 const Wrapper = styled.div`
   width: 100%;
 `;
 const Flex = styled.main`
+  margin-top: 30px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -81,6 +83,7 @@ const ItemDetail = () => {
         <Container>
             <Nav/>
             <Wrapper>
+                {item && <Photos imgs={item.photos}/>}
                 {item &&  <Title>{item.name}</Title>}
                 {item &&  <Price>{item.price}zł</Price>}
                 <Flex>

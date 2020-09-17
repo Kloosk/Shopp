@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import img from './img/img.jpg'
 import img2 from './img/img2.jpg'
+import {Link} from "react-router-dom";
 
 const Container = styled.div`
   width: 90vw;
@@ -27,7 +28,7 @@ const Title = styled.h1`
   font-size: 1.5rem;
   color: #000;
 `;
-const Link = styled.a`
+const Linkk = styled(Link)`
   font-size: 1.1rem;
   color: #000;
 `;
@@ -37,12 +38,12 @@ const Collection = () => {
             <Flex>
                 <Bg style={{backgroundImage: `url(${img})`}}></Bg>
                 <Title>Jenny Fairy - sandały</Title>
-                <Link href="#">Zobacz więcej</Link>
+                <Linkk to="/men">Zobacz więcej</Linkk>
             </Flex>
             <Flex>
                 <Bg style={{backgroundImage: `url(${img2})`}}></Bg>
                 <Title>Jenny Fairy - sportowe</Title>
-                <Link href="#">Zobacz więcej</Link>
+                <Linkk to="/women">Zobacz więcej</Linkk>
             </Flex>
         </Container>
     );
