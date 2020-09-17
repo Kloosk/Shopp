@@ -78,7 +78,7 @@ const ItemDetail = () => {
             .catch((err) => {
                 console.log(err);
             })
-    },[]);
+    },[id]);
     return (
         <Container>
             <Nav/>

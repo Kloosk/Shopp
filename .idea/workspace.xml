@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="be1ec718-e0a8-4787-ae3c-ab5eba2e8519" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/collection/Collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/collection/Collection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/itemdetail/ItemDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/itemdetail/ItemDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/items/Items.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/items/Items.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menuMobile/Mobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menuMobile/Mobile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menuMobile/subMenuMobile/subsubMenuMobile/SubSubMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menuMobile/subMenuMobile/subsubMenuMobile/SubSubMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/slideshow/Slideshow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slideshow/Slideshow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/searchMenu/SearchMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchMenu/SearchMenu.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +101,7 @@
       <workItem from="1600259095931" duration="2123000" />
       <workItem from="1600261250023" duration="337000" />
       <workItem from="1600261599320" duration="12266000" />
-      <workItem from="1600335122884" duration="1965000" />
+      <workItem from="1600335122884" duration="8717000" />
     </task>
     <servers />
   </component>
