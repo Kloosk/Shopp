@@ -5,6 +5,7 @@ import subSubMenuReducer from "./mobileSubSubMenu/MobileSubSubMenuReducer";
 import menuOpenReducer from "./mobileSearchMenu/MobileSearchMenuReducer";
 import cartReducer from "./mobileCart/mobileTypesReducer";
 import sortReducer from "./sortMethod/SortMethodReducer";
+import favReducer from "./favourite/FavouriteReducer";
 
 const rootReducer = combineReducers({
    menu: mobilemenuReducer,
@@ -13,6 +14,7 @@ const rootReducer = combineReducers({
    searchmenu: menuOpenReducer,
    cart: cartReducer,
    method: sortReducer,
+   fav: favReducer,
 });
 
 export default rootReducer

@@ -4,6 +4,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { createGlobalStyle } from "styled-components"
 import {Provider} from "react-redux";
+import { CookiesProvider } from 'react-cookie';
 import store from "./redux/store";
 
 const GlobalStyle = createGlobalStyle`
@@ -21,8 +22,10 @@ const GlobalStyle = createGlobalStyle`
 ReactDOM.render(
   <React.StrictMode>
       <Provider store={store}>
-          <App/>
-        <GlobalStyle />
+        <CookiesProvider>
+            <App/>
+            <GlobalStyle />
+        </CookiesProvider>
       </Provider>
   </React.StrictMode>,
   document.getElementById('root')

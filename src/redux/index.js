@@ -4,3 +4,4 @@ export {subSubMenuOn,subSubMenuOff}from './mobileSubSubMenu/MobileSubSubMenuActi
 export {menuOpen,menuClose} from './mobileSearchMenu/MobileSearchMenuActions'
 export {cartOpen,cartClose} from './mobileCart/mobileCartActions'
 export {sortDecrease,sortGrow,sortDefault} from './sortMethod/SortMethodActions'
+export {favAdd,favSub} from './favourite/FavouriteActions'

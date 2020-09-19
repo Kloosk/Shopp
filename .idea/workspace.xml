@@ -3,8 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="be1ec718-e0a8-4787-ae3c-ab5eba2e8519" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/favourite/Favourite.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/favourite/Favourite.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/itemdetail/ItemDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/itemdetail/ItemDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/elements/Favourite.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/elements/Favourite.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/searchMenu/SearchMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchMenu/SearchMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/rootReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,18 +48,19 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\menuMobile\subMenuMobile" />
-      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\menuMobile\subMenuMobile\Women" />
-      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\menuMobile" />
-      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\nav\logo" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Łukasz\Desktop\pages\src\components\club\img" />
       <recent name="C:\Users\Łukasz\Desktop\pages\src\components\companylist\img" />
       <recent name="C:\Users\Łukasz\Desktop\pages\src\components\collection\img" />
       <recent name="C:\Users\Łukasz\Desktop\pages\src\components\slideshow\img" />
       <recent name="C:\Users\Łukasz\Desktop\pages\src\components\menuMobile\subMenuMobile\subsubMenuMobile" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\favourite" />
+      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\menuMobile\subMenuMobile" />
+      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\menuMobile\subMenuMobile\Women" />
+      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\menuMobile" />
+      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\nav\logo" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -101,7 +109,9 @@
       <workItem from="1600259095931" duration="2123000" />
       <workItem from="1600261250023" duration="337000" />
       <workItem from="1600261599320" duration="12266000" />
-      <workItem from="1600335122884" duration="8717000" />
+      <workItem from="1600335122884" duration="9257000" />
+      <workItem from="1600352831258" duration="9668000" />
+      <workItem from="1600517507672" duration="6703000" />
     </task>
     <servers />
   </component>
@@ -125,10 +135,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="0" width="1103" height="774" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1599997292366" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1600017488437">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1600361942375">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600017488437" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600361942375" />
     <state x="372" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1599952592848">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

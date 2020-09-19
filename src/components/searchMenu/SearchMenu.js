@@ -79,7 +79,7 @@ const SearchMenu = () => {
             }else{
                 setFilterData(false);
             }
-        }else{ setFilterData(false)};
+        }else{ setFilterData(false);}
     };
     return (
         <Container open={open}>
