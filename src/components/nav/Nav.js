@@ -5,7 +5,7 @@ import Elements from "./elements/Elements";
 import Logo from "./logo/Logo";
 import Mobile from "../menuMobile/Mobile";
 import SearchMenu from "../searchMenu/SearchMenu";
-import Cart from "../cart/Cart";
+import CartMenu from "../cart/CartMenu";
 
 const Container = styled.nav`
   position: fixed;
@@ -41,7 +41,7 @@ const Nav = () => {
             </Flex>
             <Mobile/>
             <SearchMenu/>
-            <Cart/>
+            <CartMenu/>
         </Container>
     );
 };

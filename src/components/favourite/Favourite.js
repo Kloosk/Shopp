@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Nav from "../nav/Nav";
 import Footer from "../footer/Footer";
 import Empty from "./empty/Empty";
-import {useSelector} from "react-redux";
 import Cookies from "./cookies/Cookies";
 import {useCookies} from "react-cookie";
 

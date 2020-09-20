@@ -14,7 +14,7 @@ const Cookies = () => {
     const [cookies] = useCookies(['favourite']);
     return (
         <Container>
-            {cookies.favourite && cookies.favourite.map(el => <Cookie id={el.id} name={el.name} price={el.price} photo={el.photo}/> )}
+            {cookies.favourite && cookies.favourite.map(el => <Cookie key={el.id} id={el.id} name={el.name} price={el.price} photo={el.photo}/> )}
         </Container>
     );
 };

@@ -20,6 +20,7 @@ import SportoweMen from "./components/men/sportowe/SportoweMen";
 import SportoweWomen from "./components/women/sportowe/SportoweWomen";
 import SandalyWomen from "./components/women/sandaly/SandalyWomen";
 import ItemDetail from "./components/itemdetail/ItemDetail";
+import Cart from "./components/cart/Cart";
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
                 </Route>
                 <Route path="/favourite">
                     <Favourite/>
+                </Route>
+                <Route path="/cart">
+                    <Cart/>
                 </Route>
                 <Route exact path="/men">
                     <Men/>

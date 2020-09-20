@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be1ec718-e0a8-4787-ae3c-ab5eba2e8519" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/cart/CartMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart/Cart.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/favourite/Favourite.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/favourite/Favourite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/favourite/cookies/Cookies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/favourite/cookies/Cookies.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/itemdetail/ItemDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/itemdetail/ItemDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/nav/elements/Favourite.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/elements/Favourite.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/searchMenu/SearchMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchMenu/SearchMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/elements/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/elements/Cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/favourite/FavouriteActions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/favourite/FavouriteReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/favourite/FavouriteTypes.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/rootReducer.js" afterDir="false" />
     </list>
@@ -111,7 +115,9 @@
       <workItem from="1600261599320" duration="12266000" />
       <workItem from="1600335122884" duration="9257000" />
       <workItem from="1600352831258" duration="9668000" />
-      <workItem from="1600517507672" duration="6703000" />
+      <workItem from="1600517507672" duration="7521000" />
+      <workItem from="1600554437115" duration="1229000" />
+      <workItem from="1600595355441" duration="7929000" />
     </task>
     <servers />
   </component>
