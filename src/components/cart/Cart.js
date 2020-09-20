@@ -4,8 +4,8 @@ import Nav from "../nav/Nav";
 import Footer from "../footer/Footer";
 import FullMenu from "./FullMenu";
 import {useCookies} from "react-cookie";
-import {Link, useHistory, useLocation} from "react-router-dom";
-import {fakeAuth} from "../../auth";
+import {Link, useHistory} from "react-router-dom";
+import auth from "../../auth";
 
 const Container = styled.div`
   width: 100vw;
@@ -51,6 +51,7 @@ const Summary = styled(Link)`
   border-radius: 4px;
 `;
 const Cart = () => {
+    let history = useHistory();
     const [cookies] = useCookies(['cart']);
     const [sumOfItem,setSumOfItem] = useState(0);
     const [numOfItem,setNumOfItem] = useState(false);
@@ -65,14 +66,9 @@ const Cart = () => {
             setNumOfItem(false);
         }
     },[cookies.cart]);
-    //auth
-    let history = useHistory();
-    let location =useLocation();
-
-    let { from } = location.state || { from: { pathname: "/" } };
-    let login = () => {
-        fakeAuth.authenticate(() => {
-            history.replace(from);
+    const login = () => {
+        auth.login(() => {
+           history.push("/order");
         });
     };
 return (

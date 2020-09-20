@@ -17,30 +17,31 @@ import SportoweWomen from "./components/women/sportowe/SportoweWomen";
 import SandalyWomen from "./components/women/sandaly/SandalyWomen";
 import ItemDetail from "./components/itemdetail/ItemDetail";
 import Cart from "./components/cart/Cart";
-import {fakeAuth} from "./auth";
 import Order from "./components/order/Order";
+import auth from "./auth";
+import NotFound from "./components/notFound/NotFound";
 
 function App() {
-    function PrivateRoute({ children, ...rest }) {
-        return (
-            <Route
-                {...rest}
-                render={({ location }) =>
-                    fakeAuth.isAuthenticated ? (
-                        children
-                    ) : (
-                        <Redirect
-                            to={{
-                                pathname: "/cart",
-                                state: { from: location }
-                            }}
-                        />
-                    )
-                }
-            />
-        );
-    }
-
+    const ProtectedRoute = ({component: Component}, ...rest) => {
+      return(
+          <Route {...rest} render={props =>{
+              if(auth.isAuthenticated()){
+                  return <Component {...props}/>;
+              }
+              else{
+                  return <Redirect to={
+                      {
+                          pathname: "/cart",
+                          state: {
+                              from: props.location
+                          }
+                      }
+                  }/>
+              }
+          }}
+          />
+      )
+    };
     return (
       <Router>
          <div>
@@ -58,9 +59,9 @@ function App() {
                 <Route path="/cart">
                     <Cart/>
                 </Route>
-                <PrivateRoute path="/order">
+                <ProtectedRoute path="/order">
                     <Order/>
-                </PrivateRoute>
+                </ProtectedRoute>
                 <Route exact path="/men">
                     <Men/>
                 </Route>
@@ -81,6 +82,9 @@ function App() {
                 </Route>
                 <Route path="/:id">
                     <ItemDetail/>
+                </Route>
+                <Route>
+                    <NotFound/>
                 </Route>
             </Switch>
         </div>
