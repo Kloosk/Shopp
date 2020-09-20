@@ -2,15 +2,11 @@ import React from 'react';
 import {
     HashRouter as Router,
     Switch,
-    Route
+    Route,
+    Redirect
 } from "react-router-dom";
 import Nav from "./components/nav/Nav";
-import Slideshow from "./components/slideshow/Slideshow";
-import Collection from "./components/collection/Collection";
-import CompanyList from "./components/companylist/CompanyList";
-import Why from "./components/why/Why";
-import Club from "./components/club/Club";
-import Footer from "./components/footer/Footer";
+import Main from "./components/main/Main";
 import Registration from "./components/registration/Registration";
 import Favourite from "./components/favourite/Favourite";
 import Women from "./components/women/Women";
@@ -21,20 +17,37 @@ import SportoweWomen from "./components/women/sportowe/SportoweWomen";
 import SandalyWomen from "./components/women/sandaly/SandalyWomen";
 import ItemDetail from "./components/itemdetail/ItemDetail";
 import Cart from "./components/cart/Cart";
+import {fakeAuth} from "./auth";
+import Order from "./components/order/Order";
 
 function App() {
-  return (
+    function PrivateRoute({ children, ...rest }) {
+        return (
+            <Route
+                {...rest}
+                render={({ location }) =>
+                    fakeAuth.isAuthenticated ? (
+                        children
+                    ) : (
+                        <Redirect
+                            to={{
+                                pathname: "/cart",
+                                state: { from: location }
+                            }}
+                        />
+                    )
+                }
+            />
+        );
+    }
+
+    return (
       <Router>
          <div>
             <Switch>
                 <Route exact path="/">
                     <Nav/>
-                    <Slideshow/>
-                    <Collection/>
-                    <CompanyList/>
-                    <Why/>
-                    <Club/>
-                    <Footer/>
+                    <Main/>
                 </Route>
                 <Route path="/registration">
                     <Registration/>
@@ -45,6 +58,9 @@ function App() {
                 <Route path="/cart">
                     <Cart/>
                 </Route>
+                <PrivateRoute path="/order">
+                    <Order/>
+                </PrivateRoute>
                 <Route exact path="/men">
                     <Men/>
                 </Route>

@@ -4,12 +4,12 @@ import styled from 'styled-components'
 const Container = styled.div`
 
 `;
-const Full = () => {
+const Order = () => {
     return (
         <Container>
-
+            <p>ORDER PAGE</p>
         </Container>
     );
 };
 
-export default Full;
+export default Order;

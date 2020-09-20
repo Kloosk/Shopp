@@ -11,7 +11,6 @@ const axios = require('axios');
 const Container = styled.div`
   margin-top: 10vh;
   width: 100vw;
-  padding: 0 20px;
 `;
 const Title = styled.h1`
   font-size: 1.2rem;
@@ -24,6 +23,7 @@ const Price = styled.p`
 `;
 const Wrapper = styled.div`
   width: 100%;
+  padding: 0 20px;
 `;
 const Flex = styled.main`
   margin-top: 30px;

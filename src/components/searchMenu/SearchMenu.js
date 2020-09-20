@@ -15,6 +15,7 @@ const Container = styled.div`
  opacity:  ${props => props.open ? 1 : 0};
  z-index: -1;
  transform: ${props => props.open ? `translateY(0)` : `translateY(-100%)`};
+ border-bottom: 1px solid #333;
 `;
 const Input = styled.input`
   border: none;

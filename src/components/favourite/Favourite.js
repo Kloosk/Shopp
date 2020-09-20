@@ -5,6 +5,8 @@ import Footer from "../footer/Footer";
 import Empty from "./empty/Empty";
 import Cookies from "./cookies/Cookies";
 import {useCookies} from "react-cookie";
+import {cartClose, menuClose} from "../../redux";
+import {useDispatch} from "react-redux";
 
 const Container = styled.div`
   width: 100vw;
@@ -19,13 +21,19 @@ const Favourite = () => {
             setNumCookie(false);
         }
     },[cookies.favourite]);
-
+    const dispatch = useDispatch();
+    const closeAllMenu = () => {
+        dispatch(cartClose());
+        dispatch(menuClose());
+    };
     return (
-        <Container>
+        <>
             <Nav/>
-            {numOfCookie ? <Cookies/> : <Empty/>}
-            <Footer/>
-        </Container>
+            <Container onClick={closeAllMenu}>
+                {numOfCookie ? <Cookies/> : <Empty/>}
+                <Footer/>
+            </Container>
+        </>
     );
 };
 

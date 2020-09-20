@@ -15,6 +15,7 @@ const H1 = styled.h1`
 `;
 const Img = styled.img`
   height: 10vh;
+  padding: 0 5px;
 `;
 const Container = styled.section`
   width: 100vw;
@@ -28,7 +29,7 @@ const CompanyList = () => {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 2,
-        autoplay: false,
+        autoplay: true,
     };
     return(
         <Container>

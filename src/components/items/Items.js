@@ -40,6 +40,7 @@ const Items = ({shoes}) => {
                 setAllShoes(shoes);
                 break;
             }
+            default: break;
         }
     },[method]);
 

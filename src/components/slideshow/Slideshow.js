@@ -30,21 +30,20 @@ const Element = styled.div`
     opacity: 0.4;
 }
 `;
-const Btn = styled.button`
-  z-index: 2;
-  cursor: pointer;
-  position: absolute;
-  left: 80%;
-  bottom: 10%;
-  transform: translateX(-50%);
-  font-size: 1rem;
-  background: #fff;
-  padding: 7px 14px;
-  border: none;
-`;
 const Linkk = styled(Link)`
   color: #000;
   text-decoration: none;
+  z-index: 2;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  background: #fff;
+  padding: 7px 14px;
+  border: none;
+  width: 40%;
+  text-align: center;
+  font-size: 1.2rem;
 `;
 const Title = styled.h1`
   z-index:5;
@@ -53,7 +52,7 @@ const Title = styled.h1`
   top: 50%;
   left: 5%;
   letter-spacing: 2px;
-  font-size: 2rem;
+  font-size: 4rem;
   text-transform: uppercase;
   transform: translateY(-50%);
 `;
@@ -72,14 +71,14 @@ const Slideshow = () => {
             <Slide {...properties}>
                 <SlideEach>
                     <Element style={{'backgroundImage': `url(${slideImages[0]})`}}>
-                        <Btn><Linkk to="/women">Zobacz więcej</Linkk></Btn>
-                        <Title>Premiera VANS</Title>
+                        <Linkk to="/women">Zobacz więcej</Linkk>
+                        <Title>Women</Title>
                     </Element>
                 </SlideEach>
                 <SlideEach>
                     <Element style={{'backgroundImage': `url(${slideImages[1]})`}}>
-                        <Btn><Linkk to="/men">Zobacz więcej</Linkk></Btn>
-                        <Title>AW 20</Title>
+                        <Linkk to="/men">Zobacz więcej</Linkk>
+                        <Title>Men</Title>
                     </Element>
                 </SlideEach>
             </Slide>

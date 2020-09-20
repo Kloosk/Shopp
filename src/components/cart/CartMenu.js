@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import styled from 'styled-components'
-import {useSelector} from "react-redux";
-import Full from "./Full";
+import {useDispatch, useSelector} from "react-redux";
+import FullMenu from "./FullMenu";
 import {useCookies} from "react-cookie";
 import {Link} from "react-router-dom";
+import {cartClose} from "../../redux";
 
 const Container = styled.div`
   display: flex;
@@ -13,7 +14,8 @@ const Container = styled.div`
   top: 100%;
   left: 0;
   width: 100vw;
-  min-height: 30vh;
+  min-height: 15vh;
+  border-bottom: 1px solid #333;
   padding: 10px 10px;
   background-color: #fff;
   opacity:  ${props => props.open ? 1 : 0};
@@ -51,6 +53,7 @@ const Btn = styled(Link)`
   text-decoration: none;
 `;
 const CartMenu = () => {
+    const dispatch = useDispatch();
     const [cookies] = useCookies(['cart']);
     const open = useSelector(state => state.cart.open);
     const [sumOfItem,setSumOfItem] = useState(0);
@@ -68,12 +71,12 @@ const CartMenu = () => {
     },[cookies.cart]);
     return (
         <Container open={open}>
-            {numOfItem ? cookies.cart.map(el =><Full key={el.id} id={el.id} name={el.name} price={el.price} img={el.photo}/>): <P>Nie ma produktów w koszyku.</P>}
+            {numOfItem ? cookies.cart.map(el =><FullMenu key={el.id} id={el.id} name={el.name} price={el.price} img={el.photo}/>): <P>Nie ma produktów w koszyku.</P>}
             {numOfItem && <Sum>
                 <P>Wartość produktów</P>
-                <Price>{sumOfItem}zł</Price>
+                <Price>{sumOfItem.toFixed(2)}zł</Price>
             </Sum>}
-            {numOfItem && <Btn to="/cart">Przejdź do koszyka</Btn>}
+            {numOfItem && <Btn onClick={() => {dispatch(cartClose())}} to="/cart">Przejdź do koszyka</Btn>}
         </Container>
     );
 };

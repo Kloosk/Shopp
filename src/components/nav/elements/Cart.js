@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import styled from 'styled-components'
 import {useDispatch, useSelector} from "react-redux";
-import {cartClose, cartOpen, menuClose, menuOpen} from "../../../redux";
+import {cartClose, cartOpen, menuClose} from "../../../redux";
 import {useCookies} from "react-cookie";
 
 const Container = styled.div`

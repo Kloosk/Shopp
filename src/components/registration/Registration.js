@@ -4,19 +4,28 @@ import Nav from "../nav/Nav";
 import Footer from "../footer/Footer";
 import Login from "./Login";
 import Reg from "./Reg";
+import {useDispatch} from "react-redux";
+import {cartClose, menuClose} from "../../redux";
 
 const Container = styled.div`
   width: 100vw;
   margin-top: 10vh;
 `;
 const Registration = () => {
+    const dispatch = useDispatch();
+    const closeAllMenu = () => {
+        dispatch(cartClose());
+        dispatch(menuClose());
+    };
     return (
-        <Container>
+        <>
             <Nav/>
-            <Login/>
-            <Reg/>
-            <Footer/>
-        </Container>
+            <Container onClick={closeAllMenu}>
+                <Login/>
+                <Reg/>
+                <Footer/>
+            </Container>
+        </>
     );
 };
 
