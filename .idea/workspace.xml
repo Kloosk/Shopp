@@ -4,8 +4,8 @@
     <list default="true" id="be1ec718-e0a8-4787-ae3c-ab5eba2e8519" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/cart/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/Cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/order/Order.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/order/Order.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +34,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ShoppAPI" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/order" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -42,19 +42,19 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\order" />
+      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\club\img" />
+      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\companylist\img" />
+      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\collection\img" />
+      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\slideshow\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Łukasz\Desktop\pages\public" />
       <recent name="C:\Users\Łukasz\Desktop\pages\src\components\companylist\img" />
       <recent name="C:\Users\Łukasz\Desktop\pages\src\components\favourite" />
       <recent name="C:\Users\Łukasz\Desktop\pages\src\components\menuMobile\subMenuMobile" />
       <recent name="C:\Users\Łukasz\Desktop\pages\src\components\menuMobile\subMenuMobile\Women" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\club\img" />
-      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\companylist\img" />
-      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\collection\img" />
-      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\slideshow\img" />
-      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\menuMobile\subMenuMobile\subsubMenuMobile" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -109,7 +109,8 @@
       <workItem from="1600554437115" duration="1229000" />
       <workItem from="1600595355441" duration="8231000" />
       <workItem from="1600612778041" duration="10715000" />
-      <workItem from="1600636457801" duration="2054000" />
+      <workItem from="1600636457801" duration="2330000" />
+      <workItem from="1600676608068" duration="4256000" />
     </task>
     <servers />
   </component>

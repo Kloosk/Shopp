@@ -59,9 +59,7 @@ function App() {
                 <Route path="/cart">
                     <Cart/>
                 </Route>
-                <ProtectedRoute path="/order">
-                    <Order/>
-                </ProtectedRoute>
+                <ProtectedRoute exact path="/order" component={Order}/>
                 <Route exact path="/men">
                     <Men/>
                 </Route>
@@ -83,9 +81,9 @@ function App() {
                 <Route path="/:id">
                     <ItemDetail/>
                 </Route>
-                <Route>
-                    <NotFound/>
-                </Route>
+                {/*<Route>*/}
+                {/*    <NotFound/>*/}
+                {/*</Route>*/}
             </Switch>
         </div>
       </Router>

@@ -4,8 +4,9 @@ import Nav from "../nav/Nav";
 import Footer from "../footer/Footer";
 import FullMenu from "./FullMenu";
 import {useCookies} from "react-cookie";
-import {Link, useHistory} from "react-router-dom";
+import {useHistory} from "react-router-dom";
 import auth from "../../auth";
+import Step from "./Step";
 
 const Container = styled.div`
   width: 100vw;
@@ -36,8 +37,7 @@ const Flex = styled.div`
     justify-content: space-between;
     margin-bottom: 20px;
 `;
-const Summary = styled(Link)`
-  text-decoration: none;
+const Summary = styled.button`
   display: block;
   color: #fff;
   text-align: center;
@@ -75,6 +75,7 @@ return (
     <>
         <Nav/>
         <Container>
+            {numOfItem && <Step/>}
             {numOfItem ? cookies.cart.map(el =><FullMenu key={el.id} id={el.id} name={el.name} price={el.price} img={el.photo}/>): <P>Nie ma produktów w koszyku.</P>}
             {numOfItem && <Sum>
                 <H1>Podsumowanie</H1>
