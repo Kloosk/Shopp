@@ -91,7 +91,7 @@ return (
                     <P style={{fontSize: '2rem'}}>Suma</P>
                     <Price style={{fontSize: '2rem'}}>{(sumOfItem + deliveryCost).toFixed(2)}zł</Price>
                 </Flex>
-                <Summary onClick={login}>Przejdź do zamówienia</Summary>
+                <Summary onClick={login}>Przejdź do podsumowania</Summary>
             </Sum>}
             <Footer/>
         </Container>

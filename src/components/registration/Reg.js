@@ -97,7 +97,7 @@ const Reg = () => {
     let firstPass;
     let confirmPass;
     const { register, handleSubmit,errors,watch } = useForm();
-    const onSubmit = data => console.log(data);
+    const onSubmit = data => console.log("Done");
     useEffect(() => {
         firstPass = document.getElementById("firstPass");
         confirmPass = document.getElementById("confirmPass");

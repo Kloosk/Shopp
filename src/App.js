@@ -20,6 +20,7 @@ import Cart from "./components/cart/Cart";
 import Order from "./components/order/Order";
 import auth from "./auth";
 import NotFound from "./components/notFound/NotFound";
+import LastStep from "./components/lastStep/LastStep";
 
 function App() {
     const ProtectedRoute = ({component: Component}, ...rest) => {
@@ -31,7 +32,7 @@ function App() {
               else{
                   return <Redirect to={
                       {
-                          pathname: "/cart",
+                          pathname: "/",
                           state: {
                               from: props.location
                           }
@@ -60,6 +61,7 @@ function App() {
                     <Cart/>
                 </Route>
                 <ProtectedRoute exact path="/order" component={Order}/>
+                <ProtectedRoute exact path="/laststep" component={LastStep}/>
                 <Route exact path="/men">
                     <Men/>
                 </Route>
