@@ -4,6 +4,7 @@ import Step from "./Step";
 import {useForm} from "react-hook-form";
 import Nav from "../nav/Nav";
 import {useHistory} from "react-router";
+import {useSelector} from "react-redux";
 
 const Container = styled.div`
   margin-top: 10vh;
@@ -58,6 +59,7 @@ const H1 = styled.h1`
 
 const Order = () => {
     const history = useHistory();
+    const totalCost = useSelector(state => state.cost.totalCost);
     const { register, handleSubmit,errors} = useForm();
     const onSubmit = () => {
         history.push("/laststep");
@@ -82,6 +84,7 @@ const Order = () => {
                         <Label htmlFor="cash">Płatne przy odbiorze</Label>
                     </Section>
                     {errors.pay&& <P>Wybierz metodę platności.</P>}
+                    <H1>Całkowity koszt {totalCost}zł</H1>
                     <Submit type="submit" value="Zamawiam i płacę"/>
                 </Form>
             </Container>

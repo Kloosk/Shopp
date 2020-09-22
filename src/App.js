@@ -19,7 +19,6 @@ import ItemDetail from "./components/itemdetail/ItemDetail";
 import Cart from "./components/cart/Cart";
 import Order from "./components/order/Order";
 import auth from "./auth";
-import NotFound from "./components/notFound/NotFound";
 import LastStep from "./components/lastStep/LastStep";
 
 function App() {
@@ -83,9 +82,6 @@ function App() {
                 <Route path="/:id">
                     <ItemDetail/>
                 </Route>
-                {/*<Route>*/}
-                {/*    <NotFound/>*/}
-                {/*</Route>*/}
             </Switch>
         </div>
       </Router>

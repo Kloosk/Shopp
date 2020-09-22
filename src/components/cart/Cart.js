@@ -8,6 +8,8 @@ import {useHistory} from "react-router-dom";
 import auth from "../../auth";
 import Step from "./Step";
 import {useForm} from "react-hook-form";
+import {useDispatch} from "react-redux";
+import {setTotalCost} from "../../redux";
 
 const Container = styled.div`
   width: 100vw;
@@ -90,6 +92,7 @@ const Free = styled.p`
   color: #E9500E;
 `;
 const Cart = () => {
+    const dispatch = useDispatch();
     const history = useHistory();
     const { register, handleSubmit,errors} = useForm();
     const [cookies] = useCookies(['cart']);
@@ -109,6 +112,7 @@ const Cart = () => {
     },[cookies.cart]);
     useEffect(() => {
         setWholeCost(deliveryCost+sumOfItem);
+        dispatch(setTotalCost(deliveryCost+sumOfItem));
     },[deliveryCost]);
     const handleDelivery = (e) => {
         if(sumOfItem < 200) {
