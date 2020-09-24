@@ -8,6 +8,10 @@ const Container = styled.div`
   padding-top: 20px;
   margin: 30px 0;
   position: relative;
+  @media (min-width: 992px){
+      width: 100%;
+      margin: 10px 0;
+    }
 `;
 const Delete = styled.button`
   border: none;

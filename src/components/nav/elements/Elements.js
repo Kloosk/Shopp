@@ -23,6 +23,9 @@ const Li = styled.li`
    align-items: center;
    justify-content: center;
    padding: 0 3px;
+   @media (min-width: 992px){
+    padding: 0 10px;
+  }
 `;
 const Href = styled(Link)`
   text-decoration: none;
@@ -33,12 +36,18 @@ const Href = styled(Link)`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+   @media (min-width: 992px){
+    width: auto;
+  }
 `;
 const Btn = styled.button`
   border: none;
   outline: none;
   width: 10vw;
   background: transparent;
+     @media (min-width: 992px){
+    width: auto;
+  }
 `;
 const P = styled.p`
   font-size: 0.8rem;
@@ -51,6 +60,10 @@ const Svg = styled.svg`
   color: #000;
   height: 4vh;
   width:4vw;
+  @media (min-width: 992px){
+    width: 25px;
+    height: 25px;
+  }
 `;
 const Elements = () => {
     const dispatch = useDispatch();

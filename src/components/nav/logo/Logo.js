@@ -12,6 +12,9 @@ const Container = styled(Link)`
   background-position: center;
   background-size: cover;
   cursor: pointer;
+  @media (min-width: 992px){
+    width: 100px;
+  }
 `;
 const Logo = () => {
     const dispatch = useDispatch();

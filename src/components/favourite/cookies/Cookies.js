@@ -9,6 +9,16 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  @media (min-width: 992px){
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      align-items: center;
+      grid-gap: 5vw;
+      justify-items: center;
+      width: 80%;
+      margin: 10vh auto 0 auto;
+    }
+  
 `;
 const Cookies = () => {
     const [cookies] = useCookies(['favourite']);

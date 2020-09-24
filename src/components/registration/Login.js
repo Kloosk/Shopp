@@ -4,9 +4,13 @@ import {useForm} from "react-hook-form";
 import Google from "./google/Google";
 
 const Container = styled.div`
-   width: 100vw;
+   width: 100%;
    padding: 0 25px;
    margin: 30px 0;
+   @media (min-width: 992px){
+      width: 50%;
+      margin: 0 auto 10vh auto;
+    }
 `;
 const Title = styled.h1`
   font-size: 1.6rem;
@@ -75,6 +79,9 @@ const ShowPass = styled.div`
  top: 50%;
  transform: translateY(-50%);
  cursor: pointer;
+  @media (min-width: 992px){
+     right: 10px;
+  }
 `;
 const Login = () => {
     let loginPass;

@@ -13,12 +13,20 @@ const Container = styled.div`
   height: 100px;
   margin: 15px 0;
   position: relative;
+   @media (min-width: 992px){
+   height: auto;
+   padding-bottom: 50px;
+   border-bottom: 1px solid black;
+   }
 `;
 const Bg = styled.div`
   height: 100px;
   width: 160px;
   margin-right: 20px;
   background: ${props => `url(${props.img}) no-repeat center/cover`};
+   @media (min-width: 992px){
+    height: 120px;
+   }
 `;
 const Title = styled.h1`
   font-size: 1rem;

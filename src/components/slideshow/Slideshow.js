@@ -19,6 +19,9 @@ const Element = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     position:relative;
+    @media (min-width: 992px){
+      height: 50vh;
+   }
     &::after{
     content: '';
     position: absolute;
@@ -29,6 +32,7 @@ const Element = styled.div`
     background-color: #000;
     opacity: 0.4;
 }
+    
 `;
 const Linkk = styled(Link)`
   color: #000;
@@ -44,6 +48,11 @@ const Linkk = styled(Link)`
   width: 40%;
   text-align: center;
   font-size: 1.2rem;
+  @media (min-width: 992px){
+      max-width: 30%;
+      font-size: 1.4rem;
+      left: 60%;
+   }
 `;
 const Title = styled.h1`
   z-index:5;

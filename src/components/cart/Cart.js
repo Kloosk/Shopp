@@ -14,6 +14,9 @@ import {setTotalCost} from "../../redux";
 const Container = styled.div`
   width: 100vw;
   margin-top: 10vh;
+   @media (min-width: 992px){
+   padding: 0 5vw;
+   }
 `;
 const P = styled.p`
   font-size: 1.1rem;
@@ -39,6 +42,15 @@ const Flex = styled.div`
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
+`;
+const FlexDesktop = styled.div`
+ @media (min-width: 992px){
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    }
 `;
 const Section = styled.section`
   padding: 20px 10px;
@@ -74,6 +86,9 @@ const Submit = styled.input`
   margin: 30px auto 0 auto;
   cursor: pointer;
   border-radius: 4px;
+   @media (min-width: 992px){
+   width: 100%;
+   }
 `;
 const Label = styled.label`
   margin-left: 20px;
@@ -91,6 +106,24 @@ const Free = styled.p`
   font-size: 1.2rem;
   color: #E9500E;
 `;
+const LeftSide = styled.div`
+  @media (min-width: 992px){
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 70%;
+  }
+`;
+const RightSide = styled.div`
+  @media (min-width: 992px){
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 30%;
+  }
+`;
 const Cart = () => {
     const dispatch = useDispatch();
     const history = useHistory();
@@ -98,7 +131,6 @@ const Cart = () => {
     const [cookies] = useCookies(['cart']);
     const [sumOfItem,setSumOfItem] = useState(0);
     const [numOfItem,setNumOfItem] = useState(false);
-    const [wholeCost,setWholeCost] = useState(0);
     const [deliveryCost,setDeliveryCost] = useState(0);
     useEffect(() => {
         if(Array.isArray(cookies.cart) && cookies.cart.length > 0){
@@ -111,7 +143,7 @@ const Cart = () => {
         }
     },[cookies.cart]);
     useEffect(() => {
-        setWholeCost(deliveryCost+sumOfItem);
+
         dispatch(setTotalCost(deliveryCost+sumOfItem));
     },[deliveryCost]);
     const handleDelivery = (e) => {
@@ -138,6 +170,7 @@ const Cart = () => {
 
     };
     const onSubmit = () => {
+        dispatch(setTotalCost(deliveryCost+sumOfItem));
         auth.login(() => {
             history.push("/order");
         });
@@ -147,9 +180,11 @@ return (
         <Nav/>
         <Container>
             {numOfItem && <Step/>}
+            {numOfItem && <Form onSubmit={handleSubmit(onSubmit)}>
+            <FlexDesktop>
+            <LeftSide>
             {numOfItem ? cookies.cart.map(el =><FullMenu key={el.id} id={el.id} name={el.name} price={el.price} img={el.photo}/>): <P>Nie ma produktów w koszyku.</P>}
             {numOfItem && <H1>Wybierz formę dostawy</H1>}
-            {numOfItem && <Form onSubmit={handleSubmit(onSubmit)}>
                 <Section>
                     <Input onChange={handleDelivery} type="radio" id="parcel" name="pay" ref={register({ required: true })}/>
                     <Label htmlFor="parcel">Paczkomaty</Label>
@@ -163,6 +198,8 @@ return (
                     <Label htmlFor="courier">Przesyłka kurierska</Label>
                 </Section>
                 {errors.pay&& <Err>Wybierz formę dostawy.</Err>}
+            </LeftSide>
+            {numOfItem && <RightSide>
                 <Sum>
                     <H1>Podsumowanie</H1>
                     <Flex>
@@ -176,11 +213,13 @@ return (
                     <Info>Darmowa przesyłka od 200zł</Info>
                     <Flex>
                         <P style={{fontSize: '2rem'}}>Suma</P>
-                        <Price style={{fontSize: '2rem'}}>{wholeCost.toFixed(2)}zł</Price>
+                        <Price style={{fontSize: '2rem'}}>{(deliveryCost+sumOfItem).toFixed(2)}zł</Price>
                     </Flex>
                     {sumOfItem >= 200 && <Free>Masz darmową przesyłkę</Free>}
                     <Submit type="submit" value="Przejdź do podsumowania"/>
                 </Sum>
+            </RightSide>}
+            </FlexDesktop>
             </Form>}
             <Footer/>
         </Container>

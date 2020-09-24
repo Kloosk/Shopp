@@ -3,12 +3,33 @@
   <component name="ChangeListManager">
     <list default="true" id="be1ec718-e0a8-4787-ae3c-ab5eba2e8519" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/cart/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/notFound/NotFound.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/notFound/NotFound.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/order/Order.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/order/Order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/rootReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart/CartMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/CartMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart/FullMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/FullMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/club/Club.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/club/Club.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/collection/Collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/collection/Collection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/companylist/CompanyList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/companylist/CompanyList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/favourite/Favourite.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/favourite/Favourite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/favourite/cookie/Cookie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/favourite/cookie/Cookie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/favourite/cookies/Cookies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/favourite/cookies/Cookies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/item/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item/Item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/itemdetail/AddFavBtn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/itemdetail/AddFavBtn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/itemdetail/ItemDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/itemdetail/ItemDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/itemdetail/Photos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/itemdetail/Photos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/items/Items.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/items/Items.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/items/SortMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/items/SortMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/elements/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/elements/Cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/elements/Elements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/elements/Elements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/elements/Favourite.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/elements/Favourite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/elements/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/elements/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/logo/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/logo/Logo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/registration/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registration/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/registration/Reg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registration/Reg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/searchMenu/SearchMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchMenu/SearchMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/slideshow/Slideshow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slideshow/Slideshow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/why/Why.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/why/Why.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,19 +66,19 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\order" />
-      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\club\img" />
-      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\companylist\img" />
-      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\collection\img" />
-      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\slideshow\img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Łukasz\Desktop\pages\public" />
       <recent name="C:\Users\Łukasz\Desktop\pages\src\components\companylist\img" />
       <recent name="C:\Users\Łukasz\Desktop\pages\src\components\favourite" />
       <recent name="C:\Users\Łukasz\Desktop\pages\src\components\menuMobile\subMenuMobile" />
       <recent name="C:\Users\Łukasz\Desktop\pages\src\components\menuMobile\subMenuMobile\Women" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\order" />
+      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\club\img" />
+      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\companylist\img" />
+      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\collection\img" />
+      <recent name="C:\Users\Łukasz\Desktop\pages\src\components\slideshow\img" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -116,7 +137,11 @@
       <workItem from="1600676608068" duration="4304000" />
       <workItem from="1600684152398" duration="1687000" />
       <workItem from="1600703965935" duration="7084000" />
-      <workItem from="1600788805893" duration="1239000" />
+      <workItem from="1600788805893" duration="3026000" />
+      <workItem from="1600866986227" duration="2048000" />
+      <workItem from="1600884428001" duration="2037000" />
+      <workItem from="1600925949832" duration="3000" />
+      <workItem from="1600952785904" duration="9217000" />
     </task>
     <servers />
   </component>
@@ -144,9 +169,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600361942375" />
-    <state x="372" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1600708031689">
+    <state x="372" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1600960551144">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="372" y="231" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600708031689" />
+    <state x="372" y="231" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600960551144" />
   </component>
 </project>

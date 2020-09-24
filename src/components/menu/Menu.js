@@ -9,6 +9,10 @@ const Container = styled.button`
   cursor: pointer;
   background: transparent;
   padding: 10px;
+  @media (min-width: 992px){
+    display: none;
+    visibility: hidden;
+  }
 `;
 const Ham = styled.div`
   padding:10px;

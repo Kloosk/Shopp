@@ -10,7 +10,7 @@ import CartMenu from "../cart/CartMenu";
 const Container = styled.nav`
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100vw;
   height: 8vh;
   background-color: #fff;

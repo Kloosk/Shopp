@@ -8,6 +8,10 @@ import SortMenu from "./SortMenu";
 
 const Container = styled.div`
   width: 100vw;
+  @media (min-width: 992px){
+    width: 70vw;
+    margin: 0 auto;
+  }
 `;
 const AllItems = styled.main`
   padding: 0 25px 0 15px;
@@ -17,6 +21,10 @@ const AllItems = styled.main`
   grid-template-columns: repeat(2,1fr);
   align-items: center;
   grid-gap: 10px;
+   @media (min-width: 992px){
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+  }
 `;
 const Items = ({shoes}) => {
     const [allShoes,setAllShoes] = useState(shoes);

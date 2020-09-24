@@ -28,7 +28,13 @@ const AddFav = styled.button`
     background-color:#E9500E;
     border: none;
     opacity: ${props => props.add ? 1 : 0};
+    display: ${props => props.add? "block" : "none"};
     transition: opacity 0.2s ease;
+    @media (min-width: 992px){
+      min-width: 90px;
+      max-width: 100px;
+      right: 0;
+    }
   }
   &::before{
     content: 'Produkt został już dodany';
@@ -42,7 +48,13 @@ const AddFav = styled.button`
     color: #fff;
     background-color:#E9500E;
     opacity: ${props => props.warning ? 1 : 0};
+    display: ${props => props.warning ? "block" : "none"};
     transition: opacity 0.2s ease;
+    @media (min-width: 992px){
+      min-width: 90px;
+      max-width: 100px;
+      right: 0;
+    }
   }
 `;
 const Svg = styled.svg`

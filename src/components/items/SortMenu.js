@@ -10,6 +10,9 @@ const Select = styled.select`
   border: none;
   border-bottom: 1px solid #8e8e8e;
   margin-top: 10vh;
+ @media (min-width: 992px){
+    width: 30%;
+  }
 `;
 const SortMenu = () => {
     const selectRef = useRef();

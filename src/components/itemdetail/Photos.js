@@ -5,6 +5,9 @@ import {Slide} from "react-slideshow-image";
 const Container = styled.section`
  width: 90vw;
  margin: 10vh auto 0 auto;
+ @media (min-width: 992px){
+      width: 40%;
+    }
 `;
 const SlideEach = styled.div`
 

@@ -3,8 +3,12 @@ import styled from 'styled-components'
 import {useForm} from "react-hook-form";
 
 const Container = styled.div`
-   width: 100vw;
+   width: 100%;
    padding: 0 25px;
+    @media (min-width: 992px){
+      width: 50%;
+      margin: 0 auto 0 auto;
+    }
 `;
 const Title = styled.h1`
   font-size: 1.6rem;
@@ -59,6 +63,9 @@ const ShowPass = styled.div`
  top: 50%;
  transform: translateY(-50%);
  cursor: pointer;
+ @media (min-width: 992px){
+     right: 10px;
+  }
 `;
 const Svg = styled.svg`
   width: 25px;
@@ -85,13 +92,20 @@ const Terms = styled.div`
   margin-top: 15px;
   display: flex;
   width: 100%;
+  @media (min-width: 992px){
+     align-items: center;
+  }
 `;
 const Checkbox = styled.input`
   margin-right: 20px;
   cursor: pointer;
   width: 45px;
   height: 45px;
- 
+ @media (min-width: 992px){
+     width: 25px;
+     height: 25px;
+     margin-right: 5px;
+  }
 `;
 const Reg = () => {
     let firstPass;

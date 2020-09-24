@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import AddFavBtn from "../itemdetail/AddFavBtn";
 
 const Container = styled.div`
- position: relative;
+  position: relative;
   width: 100%;
   cursor: pointer;
   border: 1px solid #fff;
@@ -16,8 +16,11 @@ const Bg = styled.div`
   width: 100%;
   height: 200px;
   background: ${props => `url(${props.bg}) no-repeat center/cover`};
+  @media (min-width: 992px){
+    height: 300px
+  }
 `;
-const Favourite = styled.button`
+const Favourite = styled.div`
   position: absolute;
   right: 0;
   top: 0;

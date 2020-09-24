@@ -13,6 +13,10 @@ const Container = styled.div`
 const Svg = styled.svg`
   width: 4vw;
   height: 4vh;
+  @media (min-width: 992px){
+    width: 25px;
+    height: 25px;
+  }
 `;
 const P = styled.p`
   font-size: 0.8rem;

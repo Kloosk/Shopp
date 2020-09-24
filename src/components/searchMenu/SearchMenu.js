@@ -11,11 +11,13 @@ const Container = styled.div`
  padding: 10px 10px;
  background-color: #fff;
  top: 100%;
- left: 0;
+ right: 0;
  opacity:  ${props => props.open ? 1 : 0};
  z-index: -1;
  transform: ${props => props.open ? `translateY(0)` : `translateY(-100%)`};
- border-bottom: 1px solid #333;
+ @media (min-width: 992px){
+    width: 20vw;
+  }
 `;
 const Input = styled.input`
   border: none;

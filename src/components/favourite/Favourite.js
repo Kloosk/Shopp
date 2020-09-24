@@ -10,6 +10,7 @@ import {useDispatch} from "react-redux";
 
 const Container = styled.div`
   width: 100vw;
+  
 `;
 const Favourite = () => {
     const [cookies] = useCookies(['favourite']);

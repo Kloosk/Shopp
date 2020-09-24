@@ -12,7 +12,7 @@ const Container = styled.div`
   flex-direction: column;
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
   width: 100vw;
   min-height: 15vh;
   border-bottom: 1px solid #333;
@@ -21,6 +21,9 @@ const Container = styled.div`
   opacity:  ${props => props.open ? 1 : 0};
   z-index: -1;
   transform: ${props => props.open ? `translateY(0)` : `translateY(-100%)`};
+  @media (min-width: 992px){
+      width: 30vw;
+    }
 `;
 const P = styled.p`
   font-size: 1rem;
