@@ -5,7 +5,7 @@ import Info from "./Info";
 
 const Container = styled.footer`
  margin-top: 100px;
- width: 100vw;
+ width: 100%;
  display: flex;
  align-items: center;
  justify-content: center;

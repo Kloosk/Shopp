@@ -9,7 +9,7 @@ import auth from "../../auth";
 import Step from "./Step";
 import {useForm} from "react-hook-form";
 import {useDispatch} from "react-redux";
-import {setTotalCost} from "../../redux";
+import {cartClose, menuClose, setTotalCost} from "../../redux";
 
 const Container = styled.div`
   width: 100vw;
@@ -176,10 +176,14 @@ const Cart = () => {
             history.push("/order");
         });
     };
+    const closeAllMenu = () => {
+        dispatch(cartClose());
+        dispatch(menuClose());
+    };
 return (
     <>
         <Nav/>
-        <Container>
+        <Container onClick={closeAllMenu}>
             {numOfItem && <Step/>}
             {numOfItem && <Form onSubmit={handleSubmit(onSubmit)}>
             <FlexDesktop>

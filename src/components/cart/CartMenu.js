@@ -23,16 +23,20 @@ const Container = styled.div`
   transform: ${props => props.open ? `translateY(0)` : `translateY(-100%)`};
   @media (min-width: 992px){
     width: 45vw;
-    display: ${props => props.open ? `block` : `none`};
+    display: ${props => props.open ? `flex` : `none`};
     border-left: 1px solid #333;
     border-bottom: 1px solid #333;
     z-index: 1001;
+    min-height: 50vh;
   }
 `;
 const P = styled.p`
   font-size: 1rem;
   padding-left: 10px;
   color: #000;
+   @media (min-width: 992px){
+    font-size: 1.2rem;
+   }
 `;
 const Sum = styled.div`
   padding-top: 10px;
@@ -45,6 +49,9 @@ const Sum = styled.div`
 const Price = styled.p`
    font-size: 1rem;
    color: #000;
+   @media (min-width: 992px){
+    font-size: 1.2rem;
+   }
 `;
 const Btn = styled(Link)`
   font-size: 1.2rem;

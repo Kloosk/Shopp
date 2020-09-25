@@ -4,7 +4,8 @@ import Step from "./Step";
 import {useForm} from "react-hook-form";
 import Nav from "../nav/Nav";
 import {useHistory} from "react-router";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import {cartClose, menuClose} from "../../redux";
 
 const Container = styled.div`
   margin-top: 10vh;
@@ -67,10 +68,15 @@ const Order = () => {
     const onSubmit = () => {
         history.push("/laststep");
     };
+    const dispatch = useDispatch();
+    const closeAllMenu = () => {
+        dispatch(cartClose());
+        dispatch(menuClose());
+    };
     return (
         <>
             <Nav/>
-            <Container>
+            <Container onClick={closeAllMenu}>
                 <Step/>
                 <H1>Wybierz metodę płatności</H1>
                 <Form onSubmit={handleSubmit(onSubmit)}>

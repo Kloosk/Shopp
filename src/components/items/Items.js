@@ -3,14 +3,15 @@ import styled from 'styled-components'
 import Nav from "../nav/Nav";
 import Footer from "../footer/Footer";
 import Item from "../item/Item";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import SortMenu from "./SortMenu";
+import {cartClose, menuClose} from "../../redux";
 
 const Container = styled.div`
   width: 100vw;
   @media (min-width: 992px){
     width: 90vw;
-    margin: 0 auto;
+    margin: 14vh auto 0 auto;
   }
 `;
 const AllItems = styled.main`
@@ -51,16 +52,23 @@ const Items = ({shoes}) => {
             default: break;
         }
     },[method]);
+    const dispatch = useDispatch();
+    const closeAllMenu = () => {
+        dispatch(cartClose());
+        dispatch(menuClose());
+    };
 
     return (
-        <Container>
+        <>
             <Nav/>
-            <SortMenu/>
-            <AllItems>
-                {allShoes.map(item => <Item key={item._id} item={item}/>)}
-            </AllItems>
-            <Footer/>
-        </Container>
+            <Container onClick={closeAllMenu}>
+                <SortMenu/>
+                <AllItems>
+                    {allShoes.map(item => <Item key={item._id} item={item}/>)}
+                </AllItems>
+                <Footer/>
+            </Container>
+        </>
     );
 };
 

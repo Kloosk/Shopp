@@ -10,7 +10,9 @@ import {useDispatch} from "react-redux";
 
 const Container = styled.div`
   width: 100vw;
-  
+  @media (min-width: 992px){
+   margin-top: 18vh;
+  }
 `;
 const Favourite = () => {
     const [cookies] = useCookies(['favourite']);

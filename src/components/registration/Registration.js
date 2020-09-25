@@ -11,7 +11,7 @@ const Container = styled.div`
   width: 100vw;
   margin-top: 10vh;
   @media (min-width: 992px){
-   margin-top: 16vh;
+   margin-top: 17vh;
   }
 `;
 const Registration = () => {
