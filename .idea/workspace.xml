@@ -5,7 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/cart/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/Cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/cart/CartMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/CartMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart/Step.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/Step.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/favourite/Favourite.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/favourite/Favourite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/items/Items.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/items/Items.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/order/Order.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/order/Order.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/registration/Registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registration/Registration.js" afterDir="false" />
@@ -122,7 +124,7 @@
       <workItem from="1600925949832" duration="3000" />
       <workItem from="1600952785904" duration="9420000" />
       <workItem from="1600972443908" duration="5125000" />
-      <workItem from="1601019581337" duration="5401000" />
+      <workItem from="1601019581337" duration="5701000" />
     </task>
     <servers />
   </component>

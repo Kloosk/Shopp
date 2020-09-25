@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.js": "./static/js/main.0a06cf17.chunk.js",
+    "main.js.map": "./static/js/main.0a06cf17.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.6e119779.js",
+    "runtime-main.js.map": "./static/js/runtime-main.6e119779.js.map",
+    "static/css/2.cf9f72d1.chunk.css": "./static/css/2.cf9f72d1.chunk.css",
+    "static/js/2.e0014c86.chunk.js": "./static/js/2.e0014c86.chunk.js",
+    "static/js/2.e0014c86.chunk.js.map": "./static/js/2.e0014c86.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.fd34f3ac6f9c1e2d7b2c4665ef61822d.js": "./precache-manifest.fd34f3ac6f9c1e2d7b2c4665ef61822d.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.cf9f72d1.chunk.css.map": "./static/css/2.cf9f72d1.chunk.css.map",
+    "static/js/2.e0014c86.chunk.js.LICENSE.txt": "./static/js/2.e0014c86.chunk.js.LICENSE.txt",
+    "static/media/adidas.png": "./static/media/adidas.34cd3cac.png",
+    "static/media/img.jpg": "./static/media/img.b1f3ad93.jpg",
+    "static/media/img1.jpg": "./static/media/img1.dbcd7efd.jpg",
+    "static/media/img2.jpg": "./static/media/img2.d90e3b5c.jpg",
+    "static/media/imgg.jpg": "./static/media/imgg.7f737217.jpg",
+    "static/media/new.png": "./static/media/new.7ddd1f26.png",
+    "static/media/nike.png": "./static/media/nike.1323439f.png",
+    "static/media/reebok.png": "./static/media/reebok.7c14f5b8.png",
+    "static/media/slick-theme.css": "./static/media/slick.f97e3bbf.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6e119779.js",
+    "static/css/2.cf9f72d1.chunk.css",
+    "static/js/2.e0014c86.chunk.js",
+    "static/js/main.0a06cf17.chunk.js"
+  ]
+}
