@@ -9,7 +9,7 @@ import SortMenu from "./SortMenu";
 const Container = styled.div`
   width: 100vw;
   @media (min-width: 992px){
-    width: 70vw;
+    width: 90vw;
     margin: 0 auto;
   }
 `;

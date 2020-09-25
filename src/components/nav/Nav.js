@@ -6,6 +6,7 @@ import Logo from "./logo/Logo";
 import Mobile from "../menuMobile/Mobile";
 import SearchMenu from "../searchMenu/SearchMenu";
 import CartMenu from "../cart/CartMenu";
+import NavDesktop from "./NavDesktop";
 
 const Container = styled.nav`
   position: fixed;
@@ -16,6 +17,9 @@ const Container = styled.nav`
   background-color: #fff;
   padding: 0 4px;
   z-index: 999;
+  @media (min-width: 992px){
+  border-bottom: 2px solid #000;
+  }
 `;
 const Flex = styled.div`
   display: flex;
@@ -42,6 +46,7 @@ const Nav = () => {
             <Mobile/>
             <SearchMenu/>
             <CartMenu/>
+            <NavDesktop/>
         </Container>
     );
 };

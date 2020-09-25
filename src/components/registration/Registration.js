@@ -10,6 +10,9 @@ import {cartClose, menuClose} from "../../redux";
 const Container = styled.div`
   width: 100vw;
   margin-top: 10vh;
+  @media (min-width: 992px){
+   margin-top: 16vh;
+  }
 `;
 const Registration = () => {
     const dispatch = useDispatch();

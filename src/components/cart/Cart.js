@@ -16,6 +16,7 @@ const Container = styled.div`
   margin-top: 10vh;
    @media (min-width: 992px){
    padding: 0 5vw;
+   margin-top: 16vh;
    }
 `;
 const P = styled.p`

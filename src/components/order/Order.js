@@ -9,6 +9,9 @@ import {useSelector} from "react-redux";
 const Container = styled.div`
   margin-top: 10vh;
   width: 100vw;
+  @media (min-width: 992px){
+   margin-top: 16vh;
+  }
 `;
 const Section = styled.section`
   padding: 20px 10px;

@@ -11,6 +11,9 @@ const axios = require('axios');
 const Container = styled.div`
   margin-top: 10vh;
   width: 100vw;
+  @media (min-width: 992px){
+   margin-top: 16vh;
+  }
 `;
 const Title = styled.h1`
   font-size: 1.2rem;

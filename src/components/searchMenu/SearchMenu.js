@@ -16,7 +16,11 @@ const Container = styled.div`
  z-index: -1;
  transform: ${props => props.open ? `translateY(0)` : `translateY(-100%)`};
  @media (min-width: 992px){
-    width: 20vw;
+    width: 45vw;
+    display: ${props => props.open ? `block` : `none`};
+    border-left: 1px solid #333;
+    border-bottom: 1px solid #333;
+    z-index: 1001;
   }
 `;
 const Input = styled.input`
