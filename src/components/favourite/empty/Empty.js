@@ -17,6 +17,7 @@ const Svg = styled.svg`
 const H1 = styled.h1`
   font-size: 2rem;
   margin: 15px;
+  text-align: center;
 `;
 const Flex = styled.div`
   display: flex;

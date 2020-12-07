@@ -20,6 +20,11 @@ const Container = styled.nav`
   @media (min-width: 992px){
   border-bottom: 2px solid #000;
   }
+  @media (min-width: 300px) 
+  and (max-width: 814px)
+  and (orientation: landscape) {
+    height: 50px;
+  }
 `;
 const Flex = styled.div`
   display: flex;

@@ -10,8 +10,6 @@ const Container = styled.section`
  width: 90vw;
  margin: 10vh auto 0 auto;
 `;
-const SlideEach = styled.div`
-`;
 const Element = styled.div`
     width: 100%;
     height: 30vh;
@@ -32,6 +30,11 @@ const Element = styled.div`
     background-color: #000;
     opacity: 0.4;
 }
+  @media (min-width: 300px) 
+  and (max-width: 814px)
+  and (orientation: landscape) {
+    height: 70vh;
+  }
     
 `;
 const Linkk = styled(Link)`
@@ -40,14 +43,14 @@ const Linkk = styled(Link)`
   z-index: 2;
   cursor: pointer;
   position: absolute;
-  left: 50%;
-  bottom: 10%;
+  right: 5px;
+  bottom: 5px;
   background: #fff;
   padding: 7px 14px;
   border: none;
-  width: 40%;
+  width: 200px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   @media (min-width: 992px){
       max-width: 30%;
       font-size: 1.4rem;
@@ -61,7 +64,7 @@ const Title = styled.h1`
   top: 50%;
   left: 5%;
   letter-spacing: 2px;
-  font-size: 4rem;
+  font-size: 2rem;
   text-transform: uppercase;
   transform: translateY(-50%);
 `;
@@ -78,18 +81,18 @@ const Slideshow = () => {
     return (
         <Container>
             <Slide {...properties}>
-                <SlideEach>
+                <div>
                     <Element style={{'backgroundImage': `url(${slideImages[0]})`}}>
                         <Linkk to="/women">Zobacz więcej</Linkk>
                         <Title>Women</Title>
                     </Element>
-                </SlideEach>
-                <SlideEach>
+                </div>
+                <div>
                     <Element style={{'backgroundImage': `url(${slideImages[1]})`}}>
                         <Linkk to="/men">Zobacz więcej</Linkk>
                         <Title>Men</Title>
                     </Element>
-                </SlideEach>
+                </div>
             </Slide>
         </Container>
     )

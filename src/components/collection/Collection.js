@@ -27,9 +27,15 @@ const Flex = styled.div`
         margin-right: 20px;
       }
    }
+  @media (min-width: 300px) 
+  and (max-width: 814px)
+  and (orientation: landscape) {
+    height: 90vh;
+    margin-top: 15px;
+  }
 `;
 const Bg = styled.div`
-  height: 40vh;
+  height: 70vh;
   width: 100%;
   background-position: center;
   background-size: cover;

@@ -13,6 +13,11 @@ const Container = styled.div`
   @media (min-width: 992px){
    margin-top: 18vh;
   }
+  @media (min-width: 300px) 
+  and (max-width: 814px)
+  and (orientation: landscape) {
+    margin-top: 50px;
+  }
 `;
 const Favourite = () => {
     const [cookies] = useCookies(['favourite']);

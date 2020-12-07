@@ -24,6 +24,12 @@ const Img = styled.img`
 const Container = styled.section`
   width: 100vw;
   margin: 40px 0;
+  @media (min-width: 300px) 
+  and (max-width: 814px)
+  and (orientation: landscape) {
+    width: 60vw;
+    margin: 40px auto;
+  }
 `;
 
 const CompanyList = () => {

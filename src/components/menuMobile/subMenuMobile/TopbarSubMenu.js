@@ -10,6 +10,11 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #000;
+  @media (min-width: 300px) 
+  and (max-width: 814px)
+  and (orientation: landscape) {
+    height: 50px;
+  }
 `;
 const Title = styled.h1`
   font-size: 1.2rem;

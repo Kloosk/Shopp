@@ -35,6 +35,12 @@ const Svg = styled.svg`
     width: 25px;
     height: 25px;
   }
+    @media (min-width: 300px) 
+  and (max-width: 814px)
+  and (orientation: landscape) {
+    width: 20px;
+    height: 20px;
+  }
 `;
 const P = styled.p`
   font-size: 0.8rem;

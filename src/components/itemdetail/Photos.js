@@ -18,6 +18,11 @@ const Element = styled.div`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    @media (min-width: 300px) 
+    and (max-width: 814px)
+    and (orientation: landscape) {
+       height: 85vh;
+    }
 `;
 const Photos = ({imgs}) => {
     const properties = {

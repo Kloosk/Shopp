@@ -7,17 +7,22 @@ const Container = styled.div`
   width: 100%;
   height: 8vh;
   display: flex;
-  padding: 0 15px;
+  padding: 0 10px;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #000;
+  @media (min-width: 300px) 
+  and (max-width: 814px)
+  and (orientation: landscape) {
+    height: 50px;
+  }
 `;
 const Title = styled.h1`
   font-size: 1.2rem;
   color: #000;
 `;
 const Exit = styled.button`
-  padding: 10px;
+  padding: 2px;
   border: none;
   outline: none;
   background: transparent;
@@ -25,8 +30,8 @@ const Exit = styled.button`
 `;
 const Svg = styled.svg`
   color: #000;
-  width: 3vw;
-  height: 3vh;
+  width: 20px;
+  height: 20px;
 `;
 const Topbar = () => {
     const dispatch = useDispatch();

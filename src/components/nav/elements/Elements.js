@@ -31,7 +31,6 @@ const Href = styled(Link)`
   text-decoration: none;
   color: #000;
   height: 100%;
-  width: 10vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,7 +42,6 @@ const Href = styled(Link)`
 const Btn = styled.button`
   border: none;
   outline: none;
-  width: 10vw;
   background: transparent;
      @media (min-width: 992px){
     width: auto;
@@ -63,6 +61,12 @@ const Svg = styled.svg`
   @media (min-width: 992px){
     width: 25px;
     height: 25px;
+  }
+   @media (min-width: 300px) 
+  and (max-width: 814px)
+  and (orientation: landscape) {
+    width: 20px;
+    height: 20px;
   }
 `;
 const Elements = () => {

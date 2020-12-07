@@ -11,6 +11,11 @@ import {cartClose, menuClose} from "../../redux";
 
 const Container = styled.div`
   width: 100%;
+   @media (min-width: 300px) 
+  and (max-width: 814px)
+  and (orientation: landscape) {
+    margin-top: 50px;
+  }
 `;
 const Main = () => {
     const dispatch = useDispatch();

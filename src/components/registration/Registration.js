@@ -13,6 +13,11 @@ const Container = styled.div`
   @media (min-width: 992px){
    margin-top: 17vh;
   }
+   @media (min-width: 300px) 
+  and (max-width: 814px)
+  and (orientation: landscape) {
+    margin-top: 50px;
+  }
 `;
 const Registration = () => {
     const dispatch = useDispatch();

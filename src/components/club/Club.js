@@ -60,6 +60,7 @@ const SubTitle = styled.p`
   font-size: 1.1rem;
   color: #000;
   margin: 5px 0;
+  text-align: center;
   @media (min-width: 992px){
     font-size: 1.4rem;
     color: #fff;

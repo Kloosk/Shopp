@@ -8,14 +8,13 @@ const Container = styled.button`
   outline: none;
   cursor: pointer;
   background: transparent;
-  padding: 10px;
+  padding: 3px;
   @media (min-width: 992px){
     display: none;
     visibility: hidden;
   }
 `;
 const Ham = styled.div`
-  padding:10px;
   position: relative;
   width: 35px;
   height: 30px;
