@@ -52,9 +52,9 @@ const Linkk = styled(Link)`
   text-align: center;
   font-size: 1.1rem;
   @media (min-width: 992px){
-      max-width: 30%;
       font-size: 1.4rem;
-      left: 60%;
+      right: 50px;
+      bottom: 15px;
    }
 `;
 const Title = styled.h1`

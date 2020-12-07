@@ -34,6 +34,10 @@ const Input = styled.input`
   &:focus{
   border-bottom: 1px solid #000;
   }
+  @media (min-width: 992px){
+      width: 95%;
+ 
+  }
 `;
 const SearchIcon = styled.div`
   display: flex;

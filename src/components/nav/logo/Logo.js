@@ -13,7 +13,7 @@ const Container = styled(Link)`
   background-size: cover;
   cursor: pointer;
   @media (min-width: 992px){
-    width: 100px;
+    width: 150px;
   }
   @media (min-width: 300px) 
   and (max-width: 814px)

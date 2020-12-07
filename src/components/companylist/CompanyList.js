@@ -24,6 +24,10 @@ const Img = styled.img`
 const Container = styled.section`
   width: 100vw;
   margin: 40px 0;
+  @media (min-width: 992px){
+      width: 80vw;
+      margin: 40px auto;
+  }
   @media (min-width: 300px) 
   and (max-width: 814px)
   and (orientation: landscape) {
